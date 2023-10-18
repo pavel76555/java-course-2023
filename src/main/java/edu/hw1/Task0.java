@@ -1,5 +1,16 @@
 package edu.hw1;
 
-public class Task0 {
-    public static void 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+public final class Task0 {
+    private final static Logger LOGGER = LogManager.getLogger();
+
+    private Task0() {
+    }
+
+    public static void printHello() {
+        LOGGER.info("Привет, мир!");
+    }
+
 }
